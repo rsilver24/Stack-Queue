@@ -10,6 +10,8 @@ public class StackQueue<E> {
 
     public StackQueue(){
         size = 0;
+        stack1 = null;
+        stack2 = null;
     }
 
     // Methods
