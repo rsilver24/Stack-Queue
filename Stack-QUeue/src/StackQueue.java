@@ -10,14 +10,14 @@ public class StackQueue<E> {
 
     public StackQueue(){
         size = 0;
-        stack1 = null;
-        stack2 = null;
+        stack1 = new Stack();
+        stack2 = new Stack();
     }
 
     // Methods
 
-    public void enqueue(){
-
+    public void enqueue(E element){
+        stack1.push(element);
     }
 
     public E dequeue(){
