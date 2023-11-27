@@ -37,14 +37,26 @@ public class StackQueue<E> {
     }
 
     public boolean isEmpty(){
-
+        if (size == 0)
+            return true;
+        return false;
     }
 
     public int size(){
-
+        return size;
     }
 
     public E peek(){
-
+        E value;
+        if (size == 1){
+            value = (E)stack1.peek();
+        } else{
+            for (int i = 0; i < size(); i++){
+                stack2.push(stack1.pop());
+            } value = (E)stack2.peek();
+            for (int i = 0; i < size(); i++){
+                stack1.push(stack2.pop());
+            }
+        } return value;
     }
 }
