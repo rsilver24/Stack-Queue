@@ -1,3 +1,4 @@
+// Roan Silver      Created: November 27th 2023        Last Edits: November 29th, 2023
 public class StackQueue<E> {
 
     // Instance Data
